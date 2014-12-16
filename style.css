@@ -1,0 +1,191 @@
+/*
+Theme Name: 	Academic Photo Background Foundation 5 (Flagship Style)
+Description: 	For small academic departments with rotating photo as homepage background
+Author: 		Tim Gelles
+Author URI: 	http://krieger.jhu.edu/communications/web
+Version: 		1.0
+Template: ksas_flagship_academic_f5
+*/
+
+.textwidget {margin: 0;}
+.grey {color: #ccc;}
+#page {
+	margin-top: 15px;
+}
+#main_nav ul li {
+	padding: 0 5px;
+}
+#main_nav ul li ul li {
+	padding: 0;
+}
+#main_nav ul li ul li {padding:0;}
+.nav-bar > li.has-flyout > a:first-child {
+	padding-right: 0;
+}
+
+.nav-bar > li { float: left; display: block; position: relative; padding: 0; margin: 0;  line-height: 72px;  }
+.nav-bar > li.active { background: #255682; }
+.nav-bar > li.active > a { color: white; cursor: default; }
+.nav-bar > li.active:hover { background: #255682; cursor: default; }
+.nav-bar > li:hover { background: #255682; }
+.nav-bar > li > a { color: #FFF; }
+.nav-bar > li ul { margin-bottom: 0; }
+.nav-bar > li .flyout { display: none; }
+.nav-bar > li.has-flyout > a:first-child { padding-right: 25px; position: relative; }
+.nav-bar > li.has-flyout > a:first-child:after { content: ""; display: block; width: 0; height: 0; border: none; }
+.nav-bar > li.has-flyout > a.flyout-toggle { border-left: 0 !important; position: absolute; right: 0; top: 0; padding: 20px; z-index: 2; display: block; }
+.nav-bar > li.has-flyout.is-touch > a:first-child { padding-right: 55px; }
+.nav-bar > li.has-flyout.is-touch > a.flyout-toggle { border-left: 1px dashed #666; }
+.nav-bar > li > a:first-child { position: relative; padding: 0 20px; display: block; text-decoration: none; font-size: 14px; }
+.nav-bar > li > input { margin: 0 10px; }
+
+#main_nav ul .flyout { background: rgb(0,0,0); background: rgba(0,0,0,.75); padding: 0px; margin: 0; border: 1px solid #000; position: absolute; top: 60px; left: 0px; width: 300px; z-index: 40 !important; -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); height: auto; /* remove margin on any first-child element */ /* remove margin on last element */ }
+#main_nav ul .flyout p { line-height: 1.2; font-size: 13px; }
+#main_nav ul .flyout *:first-child { margin-top: 0; }
+#main_nav ul .flyout *:last-child { margin-bottom: 0; }
+#main_nav ul .flyout.small { width: 166.66667px; }
+#main_nav ul .flyout.large { width: 437.5px; }
+#main_nav ul .flyout.right { left: auto; right: -2px; }
+#main_nav ul .flyout.left { right: auto; left: -2px; }
+#main_nav ul .flyout.up { bottom: auto; }
+#main_nav ul.flyout li {float:none;}
+ul.flyout, .nav-bar li ul { padding: 0; list-style: none; }
+ul.flyout li, .nav-bar li ul li { border-left: solid 3px #000; }
+ul.flyout li a, .nav-bar li ul li a { background: rgb(0,0,0);background: rgba(0,0,0,.75); border: 1px solid #000; border-width: 1px 1px 0 0; color: #FFF; display: block; font-size: 14px; height: auto; line-height: 1; padding: 15px 20px; -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset; -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset; box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset; }
+ul.flyout li a:hover, .nav-bar li ul li a:hover { background: #333; background: rgba(255,255,255,.1); color: #333; }
+ul.flyout li.active, .nav-bar li ul li.active { margin-top: 0; border-top: 1px solid #4d4d4d; border-left: 4px solid #1a1a1a; }
+ul.flyout li.active a, .nav-bar li ul li.active a { background: #4d4d4d; border: none; color: #fff; height: auto; margin: 0; position: static; top: 0; -webkit-box-shadow: 0 0 0; -moz-box-shadow: 0 0 0; box-shadow: 0 0 0; }
+
+#main_nav ul li:hover ul,
+#main_nav ul li a:hover ul,
+#main_nav ul li.current_page_ancestor ul,
+#main_nav ul li.current_page_item ul {
+	visibility:visible;
+	background: rgb(0,0,0);
+	background: rgba(0,0,0,.75); 
+	width: 300px;
+	min-height:auto;
+	-webkit-border-radius:  0px;
+	-moz-border-radius: 	0px;
+	border-radius: 			0px;
+	z-index: 1;
+}
+
+#main_nav ul li:hover ul li a:hover,
+#main_nav ul li a:hover ul li a:hover {  
+	background: none;
+	color:#FFF;
+}
+
+
+#main_nav ul li ul li.current_page_item a,
+#main_nav ul li ul li.current_page_ancestor a,
+#main_nav ul li ul li.current_page_parent a,
+#main_nav ul li ul li a:hover {
+	color:#FFF;
+}
+#quicklinks li.has-flyout {
+	line-height: 38px;
+}
+
+#quicklinks ul.flyout li a, #quicklinks .nav-bar li ul li a {
+	border: 1px solid #CCC;
+}
+
+#sidebar ul.sub-menu {display: none;}
+
+#main_nav ul li.current_page_ancestor ul,
+#main_nav ul li.current_page_item ul {
+	display: none;
+}
+li.external a::after {
+	line-height: normal;
+	float: none;
+}
+.wrapper {
+	margin-top: 12px;
+}
+
+#sidebar li.external a::after {
+	color: #336699;
+}
+
+#main_nav .exclude {
+	display: none !important;
+}
+
+/*******VIDEO-BG****************/
+
+.no-backgroundsize body {
+    background: none;
+}
+
+/* Flash Fallback container */
+#flash-fallback {
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.wrapper {
+	background: rgba(255, 255, 255, 0.88);
+}
+
+#photo_bg {
+position: fixed; 
+left: 0; 
+top: 0;
+min-width: 100%; 
+min-height: 100%;
+width: auto; 
+height: auto; z-index: -100;
+background-size: cover;
+background-position: center center;
+}
+
+video#video_bg {
+position: fixed; right: 0; bottom: 0;
+min-width: 100%; min-height: 100%;
+width: auto; height: auto; z-index: -100;
+background: url('../img/video_bg_small.jpg') no-repeat;
+background-size: cover;
+}
+
+div#mobile-vid-caption {
+height: 400px;
+}
+
+
+.post {
+    background: #f2f2f2;
+    border: 1px solid #ebebeb;
+    margin-bottom: 1em;
+}
+
+.home h2 {margin-top:100px;}
+
+div#photo {
+position: relative;
+height: 28em;
+}
+
+h5#caption {
+position: absolute;
+top: 24em;
+right: 0;
+font-style: oblique;
+}
+
+@media only screen and (max-width: 64em){
+	.home h2{ margin-top: 25px;}
+	video#video_bg { display: none; }
+}
+
+@media only screen and (min-width: 64.063em) {
+	#sidebar{ margin-top: 2.75em; }
+}
+
