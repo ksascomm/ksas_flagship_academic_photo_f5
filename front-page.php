@@ -62,13 +62,20 @@ Template Name: Home - Background Photo
 <!-- Begin main content area -->
 <div class="row wrapper radius10" id="page" role="main">
 	<div class="small-12 large-8 columns">
+
 	    <?php if ( $news_query->have_posts() ) : ?>
 	    	<div class="row">
 	    		<div class="small-12 columns">
-	    			<h4><?php echo $theme_option['flagship_sub_feed_name']; ?></h4>
+	    			<div class="panel callout radius10 five columns last">
+	            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+	                <h4><?php the_title(); ?></h4>
+                    <?php the_content(); ?>
+                <?php endwhile; endif; ?>
+	        </div>
 	    		</div>
 	    	</div>
 	        <div class="row">
+	        <h4><?php echo $theme_option['flagship_sub_feed_name']; ?></h4>
 	           <?php while ($news_query->have_posts()) : $news_query->the_post(); ?>
 	                <div class="small-12 medium-6 columns post-container">
 	                    <div class="row">
