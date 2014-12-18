@@ -116,8 +116,7 @@
 				<?php endif; ?>
 				<?php if ( get_post_meta($post->ID, 'ecpt_books_cond', true) == 'on' ) : locate_template('parts-faculty-books.php', true, false); endif;?>
 				<?php if ( get_post_meta($post->ID, 'ecpt_extra_tab', true) ) : ?>
-					<div class="content"  id="extraTab"><?php echo get_post_meta($post->ID, 'ecpt_extra_tab', true); ?>  <?php echo do_shortcode('[gallery]'); ?>
-</div>
+					<div class="content"  id="extraTab"><?php echo get_post_meta($post->ID, 'ecpt_extra_tab', true); ?></div>
 				<?php endif; ?>
 				
 				<?php if ( get_post_meta($post->ID, 'ecpt_extra_tab2', true) ) : ?>
