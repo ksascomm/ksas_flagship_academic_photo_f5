@@ -44,6 +44,11 @@ Template Name: Home - Background Photo
 
 ?>
 <!-- Set photo background -->
+<style>
+body.custom-background {
+background-color: #000000;
+background-image: none;}
+</style>
 <?php if ( $slider_query->have_posts() ) : while ($slider_query->have_posts()) : $slider_query->the_post(); ?>
 		<div class="row" id="photo">
 			<div class="small-12 columns">
@@ -66,7 +71,7 @@ Template Name: Home - Background Photo
 	    <?php if ( $news_query->have_posts() ) : ?>
 	    	<div class="row">
 	    		<div class="small-12 columns">
-	    			<div class="panel callout radius10 five columns last">
+	    			<div class="panel callout radius10 small-12 columns last">
 	            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	                <h4><?php the_title(); ?></h4>
                     <?php the_content(); ?>
