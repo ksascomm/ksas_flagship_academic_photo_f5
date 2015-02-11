@@ -114,6 +114,14 @@ li.external a::after {
 	display: none !important;
 }
 
+.visible-img img {
+transform: inherit;
+-webkit-transform: inherit;
+-ms-transform: inherit;
+height: 94%;
+}
+
+
 /*******VIDEO-BG****************/
 
 .no-backgroundsize body {
