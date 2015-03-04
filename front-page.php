@@ -43,12 +43,7 @@ Template Name: Home - Background Photo
 			} 	
 
 ?>
-<!-- Set photo background -->
-<style>
-body.custom-background {
-background-color: #000000;
-background-image: none;}
-</style>
+
 <?php if ( $slider_query->have_posts() ) : while ($slider_query->have_posts()) : $slider_query->the_post(); ?>
 		<div class="row" id="photo">
 			<div class="small-12 columns">
@@ -112,5 +107,4 @@ background-image: none;}
 	</div>
 	<?php locate_template('parts-sidebar.php', true, false); ?>	
 </div>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
 <?php get_footer(); ?>
