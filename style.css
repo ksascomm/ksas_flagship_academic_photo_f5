@@ -183,12 +183,12 @@ height: 400px;
 
 div#photo {
 position: relative;
-height: 25em;
+height: 23em;
 }
 
 h5#caption {
 position: absolute;
-top: 21em;
+top: 19em;
 right: 0;
 font-style: oblique;
 }
