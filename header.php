@@ -41,7 +41,7 @@
 		<div class="row">
 			<div class="small-12 large-4 columns centered blue_bg">
 			<div class="mobile-logo centered"><a href="<?php echo network_site_url(); ?>">Home</a></div>
-			<h2 class="white" align="center"><?php echo get_bloginfo( 'title' ); ?></h2>
+			<h2 align="center"><a class="white" href="<?php echo site_url(); ?>"><?php echo get_bloginfo( 'title' ); ?></a></h2>
 			</div>
 		</div>
 		<div class="row hide-for-print">
@@ -102,9 +102,7 @@
 		<div class="row" id="department">
 			<div class="medium-12 columns" id="logo_nav">
 				<li class="logo"><a href="<?php echo network_home_url(); ?>" title="Krieger School of Arts & Sciences">Krieger School of Arts & Sciences</a></li>
-				
-				<a href="<?php echo site_url(); ?>"><h1 class="white"><span class="small"><?php echo get_bloginfo ( 'description' ); ?></span>					<?php echo get_bloginfo( 'title' ); ?></h1></a>
-			
+				<h1><a class="white" href="<?php echo site_url(); ?>"><span class="small"><?php echo get_bloginfo ( 'description' ); ?></span><?php echo get_bloginfo( 'title' ); ?></a></h1>
 			</div>
 		</div>
 		<div class="row hide-for-print">
