@@ -126,6 +126,14 @@ transform: inherit;
 height: 94%;
 }
 
+.no-margin {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#directory p {
+  margin-top: 10px;
+}
 
 /*******VIDEO-BG****************/
 
@@ -196,8 +204,12 @@ font-style: oblique;
 @media only screen and (max-width: 64em){
 	.home h2{ margin-top: 25px;}
 	video#video_bg { display: none; }
+	.post img{min-width: 75%;}
 }
 
+@media only screen and (max-width: 40em) {
+.post img{display: none} 
+}
 
 .program {
 	z-index: 10;
