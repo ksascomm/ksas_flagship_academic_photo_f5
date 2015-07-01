@@ -66,7 +66,9 @@ Template Name: Home - Background Photo
 	    		</div>
 	    	</div>
 	        <div class="row">
+	        <div class="small-12 columns">
 	        <h4><?php echo $theme_option['flagship_sub_feed_name']; ?></h4>
+	        </div>
 	           <?php while ($news_query->have_posts()) : $news_query->the_post(); ?>
 	                <div class="small-12 large-4 columns post-container">
 	                    <div class="row">
