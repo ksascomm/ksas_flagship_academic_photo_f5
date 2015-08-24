@@ -43,7 +43,7 @@ Template Name: Home - Background Photo
 
 				<script type="text/javascript">
 				    jQuery(document).ready(function() {
-				        jQuery.backstretch("<?php echo get_post_meta($post->ID, 'ecpt_slideimage', true); ?>");
+				        jQuery.backstretch(["<?php echo get_post_meta($post->ID, 'ecpt_slideimage', true); ?>"], {fade: 750});
 				    });
 				</script>
 				<h5 class="white text-shadow hide-for-small-only" id="caption"><strong><?php the_title(); ?></strong></h5>
