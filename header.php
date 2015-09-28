@@ -19,18 +19,21 @@
   
   <!-- CSS Files: All pages -->
   <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/stylesheets/app.css">
-  <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() ?>/style.css">
+    <!-- IE Fix for HTML5 Tags -->
+    <!--[if lt IE 10]>
+        <script async src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <script async src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+        <script async src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/assets/stylesheets/app.ie.css">
+    <![endif]-->
   <!-- CSS Files: Conditionals -->
-  
+  <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() ?>/style.css">
+
   <!-- Modernizr and Jquery Script -->
   <script src="<?php echo get_template_directory_uri() ?>/assets/js/vendor/modernizr-min.js"></script>
   <?php wp_enqueue_script('jquery'); ?> 
   <?php wp_head(); ?>
 
-  <!-- IE Fix for HTML5 Tags -->
-  <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
   <?php include_once("parts-analytics.php"); ?>
 </head>
 <?php $theme_option = flagship_sub_get_global_options(); $color_scheme = $theme_option['flagship_sub_color_scheme']; global $blog_id; $site_id = 'site-' . $blog_id; ?>
