@@ -64,7 +64,7 @@
 			    		<a href="<?php echo get_post_meta($post->ID, 'ecpt_website', true); ?>" target="_blank"><span class="icon-globe"></span>Personal Website</a><br>
 			    	<?php endif; ?>
 			    	<?php if ( get_post_meta($post->ID, 'ecpt_lab_website', true) ) : ?>
-			    		<a href="<?php echo get_post_meta($post->ID, 'ecpt_lab_website', true); ?>" target="_blank"><span class="icon-globe"></span>Group Website</a>
+			    		<a href="<?php echo get_post_meta($post->ID, 'ecpt_lab_website', true); ?>" target="_blank"><span class="icon-globe"></span>Group/Lab Website</a>
 			    	<?php endif; ?>
 			    </p>
 			</div>
