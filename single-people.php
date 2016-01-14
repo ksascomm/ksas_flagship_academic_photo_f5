@@ -43,7 +43,7 @@
 			    	<?php endif; ?>
 			    
 			    	<?php if ( get_post_meta($post->ID, 'ecpt_phone', true) ) : ?>
-			    		<span class="icon-mobile"></span><?php echo get_post_meta($post->ID, 'ecpt_phone', true); ?><br>
+			    		<span class="icon-phone"></span><?php echo get_post_meta($post->ID, 'ecpt_phone', true); ?><br>
 			    	<?php endif; ?>
 			    
 			    	<?php if ( get_post_meta($post->ID, 'ecpt_fax', true) ) : ?>
