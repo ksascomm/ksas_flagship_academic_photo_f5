@@ -58,12 +58,12 @@ Template Name: Home - Background Photo
 
 	    <?php if ( $news_query->have_posts() ) : ?>
 	    	<div class="row">
-	    		<div class="small-12 columns">
+	    		<main class="content small-12 columns" role="main">
 	            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-	                <h4><?php the_title(); ?></h4>
+	                <h1><?php the_title(); ?></h1>
                     <?php the_content(); ?>
                 <?php endwhile; endif; ?>
-	    		</div>
+	    		</main>
 	    	</div>
 	        <div class="row">
 	        <div class="small-12 columns">
