@@ -13,7 +13,21 @@ background-color: #000000;
 background-image: none;
 }
 
+#menu-footer-links a, #copyright a {
+    color: #fff!important;
+    border-bottom: .125em dotted;
+    border-bottom-color: rgba(255,255,255,0.9);
+}
+
 .textwidget {margin: 0;}
+.textwidget a {border-bottom: .125em dotted;border-bottom-color: rgba(0,0,0,.2);}
+.textwidget a:hover {color: #2C2C33 !important; border-bottom-style: solid;}
+.textwidget li a {font-family: 'gentona-light', Arial, sans-serif !important; font-weight: 300!important; }
+#menu-footer-links a, #copyright a {
+    color: #fff!important;
+    border-bottom: .125em dotted;
+    border-bottom-color: rgba(255,255,255,0.9);
+}
 .grey {color: #ccc;}
 #page {
 	margin-top: 15px;
