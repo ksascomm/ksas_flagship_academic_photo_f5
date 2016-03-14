@@ -45,9 +45,7 @@
 		</div>
 		
 		<div id="desktop-nav">
-			<div class="row hide-for-print">
-				<?php get_template_part( 'parts', 'search-bar' ); ?>
-			</div>
+			<?php get_template_part( 'parts', 'offcanvas' ); ?>
 			<div class="row" id="department">
 				<div class="medium-12 columns" id="logo_nav">
 					<div class="medium-3 columns">
