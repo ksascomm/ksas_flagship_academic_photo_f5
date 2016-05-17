@@ -12,7 +12,7 @@
 	<link rel="apple-touch-icon-precomposed" href="<?php echo get_template_directory_uri() ?>/assets/images/apple-touch-icon-57x57-precomposed.png" />
   
   <!-- CSS Files: All pages -->
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/stylesheets/app.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/stylesheets/app.min.css">
     <!-- IE Fix for HTML5 Tags -->
     <!--[if lt IE 10]>
         <script async src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
