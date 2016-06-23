@@ -70,6 +70,7 @@
 					'container_class' => 'small-12 columns',
 					'fallback_cb' => 'foundation_page_menu',
 					'walker' => new foundation_navigation(),
+					'items_wrap' => '<ul id="%1$s" class="%2$s" role="navigation" aria-label="Main menu">%3$s</ul>',
 					'depth' => 2  )); ?> 
 			</div>
 		</div>

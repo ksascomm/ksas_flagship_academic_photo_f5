@@ -23,7 +23,7 @@
 									'theme_location' => 'main_nav', 
 									'menu_class' => 'nav',
 									'container_class' => 'offset-gutter',
-									'items_wrap' =>  '<div class="radius-topright" id="sidebar_header"><h5 class="white">Also in <span class="grey bold">' . $page_name . '</span></h5></div><ul class="%2$s">%3$s</ul>',				
+									'items_wrap' =>  '<div class="radius-topright" id="sidebar_header"><h5 class="white">Also in <span class="grey bold">' . $page_name . '</span></h5></div><ul class="%2$s" role="navigation" aria-label="Sidebar Menu">%3$s</ul>',				
 									'submenu' => $page_name,
 									'depth' => 1,
 									'echo' => false
@@ -46,6 +46,7 @@
 									'menu_class' => 'nav', 
 									'container_class' => 'offset-gutter',
 									'submenu' => $parent_name,
+									'items_wrap' => '<ul class="%2$s" role="navigation" aria-label="Sidebar Menu">%3$s</ul>',
 									'depth' => 1				
 								));
 							}
