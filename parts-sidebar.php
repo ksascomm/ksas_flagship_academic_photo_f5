@@ -1,4 +1,4 @@
-	<aside class="small-12 large-4 columns hide-for-print" id="sidebar" role="complementary"> 
+	<aside class="small-12 large-4 columns hide-for-print" id="sidebar"> 
 	<?php 
 		if ( is_page() && has_post_thumbnail()  ) {  
 			wp_reset_query();
