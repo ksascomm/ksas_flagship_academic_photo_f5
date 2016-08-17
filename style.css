@@ -3,7 +3,7 @@ Theme Name: 	Academic Photo Background Foundation 5 (Flagship Style)
 Description: 	For small academic departments with rotating photo as homepage background
 Author: 		Tim Gelles
 Author URI: 	http://krieger.jhu.edu/communications/web
-Version: 		1.0
+Version: 		2.0
 Template: ksas_flagship_academic_f5
 */
 
@@ -221,27 +221,4 @@ font-style: oblique;
 
 @media only screen and (max-width: 40em) {
 .post img{display: none} 
-}
-
-.program {
-	z-index: 10;
-	background: #ba920a;
-	border-bottom-right-radius: 10px;
-border-bottom-left-radius: 10px;
-}
-.program select {
-	/*margin: 100px 0px 0px 9px;*/
-	height: 27px;
-	-webkit-appearance: none;
-	border: none;
-	background: none;
-	background: rgba(0,0,0,.1);
-	color: #FFF;
-	font: 18px 'Myriad W01 Regular', Helvetica, Arial, sans-serif;
-	font-family: 'Myriad W01 Regular', Helvetica, Arial, sans-serif;
-	font-size: 18px;
-	text-indent: 15px;
-	padding: 3px 0;
-	white-space: normal;
-	letter-spacing: 2px;
 }

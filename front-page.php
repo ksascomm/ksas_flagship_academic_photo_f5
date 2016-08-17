@@ -41,7 +41,7 @@ Template Name: Home - Background Photo
 		<div class="row" id="photo">
 			<div class="small-12 columns">
 
-				<script type="text/javascript">
+				<script defer type="text/javascript">
 				    jQuery(document).ready(function() {
 				        jQuery.backstretch(["<?php echo get_post_meta($post->ID, 'ecpt_slideimage', true); ?>"], {fade: 750});
 				    });
