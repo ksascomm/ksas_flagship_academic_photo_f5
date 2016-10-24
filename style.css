@@ -183,18 +183,6 @@ background-size: cover;
 background-position: center center;
 }
 
-video#video_bg {
-position: fixed; right: 0; bottom: 0;
-min-width: 100%; min-height: 100%;
-width: auto; height: auto; z-index: -100;
-background: url('../img/video_bg_small.jpg') no-repeat;
-background-size: cover;
-}
-
-div#mobile-vid-caption {
-height: 400px;
-}
-
 
 .post {
     background: #f2f2f2;
