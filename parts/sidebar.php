@@ -64,7 +64,7 @@
 				<div class="ecpt-page-sidebar">
 				<?php wp_reset_query(); 
 				echo apply_filters('the_content', get_post_meta($post->ID, 'ecpt_page_sidebar', true)); ?>
-				</div
+				</div>
 			<?php } ?>
 		<?php if (is_page_template('template-bb-undergrad.php') ) {
 				wp_reset_query(); 
