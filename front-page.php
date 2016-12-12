@@ -74,7 +74,7 @@ Template Name: Home - Background Photo
         	                    <?php if(has_post_thumbnail()) { ?>
         	                        <div class="row">
         	                            <div class="small-12 columns">
-        	                                <?php the_post_thumbnail('rss', array('align'=>'center')); ?>
+        	                                <?php the_post_thumbnail('rss'); ?>
         	                            </div>
         	                        </div>
                                 <?php } ?>
