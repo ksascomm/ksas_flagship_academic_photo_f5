@@ -35,7 +35,7 @@
 
 </head>
 <?php $theme_option = flagship_sub_get_global_options(); $color_scheme = $theme_option['flagship_sub_color_scheme']; global $blog_id; $site_id = 'site-' . $blog_id; ?>
-<body <?php body_class($color_scheme . ' ' . $site_id); ?> onLoad="viewport()">
+<body <?php body_class($color_scheme . ' ' . $site_id); ?> itemscope="itemscope" itemtype="http://schema.org/WebPage">
 	<header itemscope="itemscope" itemtype="http://schema.org/WPHeader" role="banner">
 	   <div id="mobile-nav">
 			<div class="row">
