@@ -36,8 +36,8 @@
 </head>
 <?php $theme_option = flagship_sub_get_global_options(); $color_scheme = $theme_option['flagship_sub_color_scheme']; global $blog_id; $site_id = 'site-' . $blog_id; ?>
 <body <?php body_class($color_scheme . ' ' . $site_id); ?> itemscope="itemscope" itemtype="http://schema.org/WebPage">
-	<a href="#page" class="skipLink">Skip to main content</a>
 	<header itemscope="itemscope" itemtype="http://schema.org/WPHeader" role="banner">
+	<a href="#page" class="skipLink">Skip to main content</a>
 	   <div id="mobile-nav">
 			<div class="row">
 				<div class="small-12 large-4 columns centered">
