@@ -38,7 +38,7 @@ Template Name: Home - Background Photo
 
 <!-- Set photo background -->
 <?php if ( $slider_query->have_posts() ) : while ($slider_query->have_posts()) : $slider_query->the_post(); ?>
-		<div class="row" id="photo" role="img" aria-label="Highlighted Student Work: <?php the_title(); ?>">
+		<div class="row hide-on-print" id="photo" role="img" aria-label="Highlighted Student Work: <?php the_title(); ?>">
 			<div class="small-12 columns">
 				<script defer type="text/javascript">
 				    jQuery(document).ready(function() {

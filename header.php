@@ -38,7 +38,11 @@
 <body <?php body_class($color_scheme . ' ' . $site_id); ?> itemscope="itemscope" itemtype="http://schema.org/WebPage">
 	<header itemscope="itemscope" itemtype="http://schema.org/WPHeader" role="banner">
 	<a href="#page" class="skipLink">Skip to main content</a>
-	   <div id="mobile-nav">
+	<div class="print-only">
+		<img src="<?php echo get_template_directory_uri() ?>/assets/images/krieger.small.horizontal.blue.jpg" alt="krieger logo">
+		<h1><?php echo get_bloginfo ( 'description' ); ?> <?php echo get_bloginfo( 'title' ); ?></h1>
+	</div>
+	   <div id="mobile-nav" class="hide-on-print">
 			<div class="row">
 				<div class="small-12 large-4 columns centered">
 					<?php if ($blog_id == 79)  : ?>
@@ -52,7 +56,7 @@
 			</div>
 		</div>
 		
-		<div id="desktop-nav">
+		<div id="desktop-nav" class="hide-on-print">
 			<?php get_template_part( '/parts/offcanvas' ); ?>
 			<div class="row" id="department">
 				<div class="medium-12 columns" id="logo_nav">
@@ -71,7 +75,7 @@
 					</div>			
 				</div>
 			</div>
-			<div class="row hide-for-print" aria-label="Main Menu" id="main_nav" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+			<div class="row" aria-label="Main Menu" id="main_nav" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement" role="navigation">
 				<?php wp_nav_menu( array( 
 					'theme_location' => 'main_nav', 
 					'menu_class' => 'nav-bar', 

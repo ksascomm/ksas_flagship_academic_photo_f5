@@ -318,9 +318,16 @@ h5#caption {
 	.post img {
 		min-width: 75%;
 	}
+	#photo {
+		display: none;
+	}
 }
 @media only screen and (max-width:40em) {
 	.post img {
 		display: none
 	}
+}
+
+@media print {
+	.backstretch { display: none; }
 }
